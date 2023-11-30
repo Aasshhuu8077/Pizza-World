@@ -1,0 +1,23 @@
+@import "./variables";
+
+.footer__wrapper{
+    font-family: $body-font;
+    color: white;
+    background-color: $primary-gray;
+}
+
+.background__container{
+    top: 0;
+}
+
+.footer__link-heading{
+    color: $primary-color;
+}
+
+.footer__name{
+    color: $primary-color;
+}
+
+.footer__overlay{
+    background-color: rgba(0, 0, 0, 0.426);
+}

@@ -1,0 +1,92 @@
+.header {
+  top: 0;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  color: #fd8428;
+}
+
+.nav-link {
+  transition-property: all;
+  transition-duration: 500ms;
+}
+.nav-link:hover {
+  color: #E14D2A;
+  text-shadow: 0px 0px 3px #E14D2A;
+}
+
+.btn-primary {
+  border: 2px solid #fd8428;
+  background-color: white;
+  color: #fd8428;
+  transition-property: all;
+  transition-duration: 500ms;
+}
+.btn-primary:hover {
+  background-color: #E14D2A;
+  border: 2px solid #E14D2A;
+  color: white;
+}
+
+.btn-secoundry {
+  border: 2px solid #fd8428;
+  background-color: #fd8428;
+  color: #ffffff;
+  transition-property: all;
+  transition-duration: 500ms;
+}
+.btn-secoundry:hover {
+  background-color: #E14D2A;
+  border: 2px solid #E14D2A;
+  color: white;
+}
+
+.header__banner {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .header__banner {
+    display: flex;
+    height: 10vh;
+  }
+  .hamburgur__cont > div {
+    width: 50px;
+    height: 2px;
+    margin: 3px 0;
+    background-color: #fd8428;
+  }
+  .navbar-content {
+    transition-property: all;
+    transition-duration: 1s;
+    left: -100%;
+    z-index: 10;
+    position: fixed;
+    top: 8%;
+    height: 100vh;
+    background-color: white;
+  }
+  .bringnav {
+    left: 0%;
+  }
+  .navbar-content > div > div:nth-child(2) {
+    padding: 0.5rem 3rem;
+    flex-direction: column;
+  }
+  .navbar-content > div > div:nth-child(2) > nav {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .navbar-content > div > div:nth-child(2) > nav .nav-link {
+    padding: 1rem 0;
+    margin: 0;
+    width: 100%;
+  }
+  .navbar-content > div > div:nth-child(2) > div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  .navbar-content > div > div:nth-child(1) {
+    display: none;
+  }
+}/*# sourceMappingURL=navbar.css.map */

@@ -1,0 +1,153 @@
+@import "./variables";
+
+.loading__section{
+    background-color : rgb(255, 224, 174);
+    top : 0;
+}
+
+@keyframes loader {
+    0%{
+        background: linear-gradient(to right, red, rgb(6, 81, 255), rgb(165, 55, 255),rgb(49, 166, 255), red);
+        width: 0%;
+    }
+    25%{
+        background: linear-gradient(to right, red,  rgb(6, 81, 255), rgb(165, 55, 255),rgb(49, 166, 255), red);
+        // background: linear-gradient(to right, rgb(255, 238, 0), rgb(255, 170, 0), rgb(255, 136, 0));
+        width: 25%;
+    }
+    50%{
+        background: linear-gradient(to right, red,  rgb(6, 81, 255), rgb(165, 55, 255),rgb(49, 166, 255), red);
+        // background: linear-gradient(to right, rgb(255, 238, 0), rgb(255, 170, 0), rgb(255, 136, 0));
+        width: 50%;
+    }
+    75%{
+        background: linear-gradient(to right, red,  rgb(6, 81, 255), rgb(165, 55, 255),rgb(49, 166, 255), red);
+        // background: linear-gradient(to right, rgb(255, 238, 0), rgb(255, 170, 0), rgb(255, 136, 0));
+        width: 75%;
+    }
+    100%{
+        background: linear-gradient(to right, red,  rgb(6, 81, 255), rgb(165, 55, 255),rgb(49, 166, 255), red);
+        // background: linear-gradient(to right, rgb(255, 238, 0), rgb(255, 170, 0), rgb(255, 136, 0));
+        width: 100%;
+    }
+}
+
+.loading__img-cont{
+    width: 15%;
+    min-width: 200px;
+    padding: 20px;
+}
+
+.loading__bar{
+    margin-top: 20px;
+    height: 5px;
+    animation-name: loader;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.7, 0.7, 0.7, 0.7);
+    background-color: rgb(248, 188, 67);
+}
+
+// input field
+
+.inputfield{
+    border: 1px solid $border-gray;
+    outline: none;
+}
+
+// checkbox button
+.selectedbutton{
+    background-color: rgb(69, 201, 244);
+}
+
+.unselectedbutton{
+    background-color: white;
+}
+
+// navbar
+
+.usermenu__cont{
+    &>img{
+        cursor: pointer;
+        border-radius: 50%;
+        height: 35px;
+        width: 35px;
+        &:hover{
+            box-shadow:  0px 0px 4px rgba(0, 0, 0, 0.342);
+        }
+    }
+
+    &>ul{
+        transition-property: all;
+        transition-duration: 200ms;
+        border-radius: 5px;
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.379);
+        &>li{
+            padding: 1rem 1rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+            &:hover{
+                color: $secondary-color;
+                background-color: rgb(231, 231, 231);
+                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.169);
+            }
+        }
+    }
+}
+
+.logout__menu{
+    background-color: rgb(224, 84, 84);
+    color: white;
+    border-radius: 0px 0px 5px 5px;
+    &:hover{ 
+        color: white!important;
+        background-color: red!important;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.169)!important;
+    }
+}
+@keyframes showkeyframe {
+    0%{
+        visibility: visible;
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes hidekeyframe {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+.show{
+    animation-name: showkeyframe;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    visibility: visible;
+}
+
+.hide{
+    animation-name: hidekeyframe;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    visibility: hidden;
+}

@@ -1,0 +1,45 @@
+.loginsection__cont {
+  height: 60vh;
+}
+
+.login__form-cont {
+  box-shadow: 0px 0px 15px rgb(137, 137, 137);
+  background-color: #fd8428;
+  height: 70%;
+  background-size: cover;
+  color: white;
+}
+.login__form-cont > img {
+  z-index: 0;
+}
+
+.loginform {
+  background-color: rgba(255, 255, 255, 0.868);
+  color: black;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+.loginform > div > div > input {
+  outline: none;
+}
+
+.login__button {
+  border: 2px solid #CD104D;
+  color: white;
+  background-color: #CD104D;
+}
+.login__button:hover {
+  background-color: #e11153;
+  border: 2px solid #e11153;
+}
+.login__button:active {
+  border: 2px solid #CD104D;
+  background-color: #CD104D;
+}
+
+.login__signinLink {
+  color: #9C2C77;
+}
+.login__signinLink:hover {
+  color: #fd8428;
+}/*# sourceMappingURL=login.css.map */

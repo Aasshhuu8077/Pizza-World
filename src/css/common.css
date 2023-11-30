@@ -1,0 +1,197 @@
+.loading__section {
+  background-color: rgb(255, 224, 174);
+  top: 0;
+}
+
+@-webkit-keyframes loader {
+  0% {
+    background: linear-gradient(to right, red, rgb(6, 81, 255), rgb(165, 55, 255), rgb(49, 166, 255), red);
+    width: 0%;
+  }
+  25% {
+    background: linear-gradient(to right, red, rgb(6, 81, 255), rgb(165, 55, 255), rgb(49, 166, 255), red);
+    width: 25%;
+  }
+  50% {
+    background: linear-gradient(to right, red, rgb(6, 81, 255), rgb(165, 55, 255), rgb(49, 166, 255), red);
+    width: 50%;
+  }
+  75% {
+    background: linear-gradient(to right, red, rgb(6, 81, 255), rgb(165, 55, 255), rgb(49, 166, 255), red);
+    width: 75%;
+  }
+  100% {
+    background: linear-gradient(to right, red, rgb(6, 81, 255), rgb(165, 55, 255), rgb(49, 166, 255), red);
+    width: 100%;
+  }
+}
+
+@keyframes loader {
+  0% {
+    background: linear-gradient(to right, red, rgb(6, 81, 255), rgb(165, 55, 255), rgb(49, 166, 255), red);
+    width: 0%;
+  }
+  25% {
+    background: linear-gradient(to right, red, rgb(6, 81, 255), rgb(165, 55, 255), rgb(49, 166, 255), red);
+    width: 25%;
+  }
+  50% {
+    background: linear-gradient(to right, red, rgb(6, 81, 255), rgb(165, 55, 255), rgb(49, 166, 255), red);
+    width: 50%;
+  }
+  75% {
+    background: linear-gradient(to right, red, rgb(6, 81, 255), rgb(165, 55, 255), rgb(49, 166, 255), red);
+    width: 75%;
+  }
+  100% {
+    background: linear-gradient(to right, red, rgb(6, 81, 255), rgb(165, 55, 255), rgb(49, 166, 255), red);
+    width: 100%;
+  }
+}
+.loading__img-cont {
+  width: 15%;
+  min-width: 200px;
+  padding: 20px;
+}
+
+.loading__bar {
+  margin-top: 20px;
+  height: 5px;
+  -webkit-animation-name: loader;
+          animation-name: loader;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: cubic-bezier(0.7, 0.7, 0.7, 0.7);
+          animation-timing-function: cubic-bezier(0.7, 0.7, 0.7, 0.7);
+  background-color: rgb(248, 188, 67);
+}
+
+.inputfield {
+  border: 1px solid #dcdcdc;
+  outline: none;
+}
+
+.selectedbutton {
+  background-color: rgb(69, 201, 244);
+}
+
+.unselectedbutton {
+  background-color: white;
+}
+
+.usermenu__cont > img {
+  cursor: pointer;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+}
+.usermenu__cont > img:hover {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.342);
+}
+.usermenu__cont > ul {
+  transition-property: all;
+  transition-duration: 200ms;
+  border-radius: 5px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.379);
+}
+.usermenu__cont > ul > li {
+  padding: 1rem 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.usermenu__cont > ul > li:hover {
+  color: #CD104D;
+  background-color: rgb(231, 231, 231);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.169);
+}
+
+.logout__menu {
+  background-color: rgb(224, 84, 84);
+  color: white;
+  border-radius: 0px 0px 5px 5px;
+}
+.logout__menu:hover {
+  color: white !important;
+  background-color: red !important;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.169) !important;
+}
+
+@-webkit-keyframes showkeyframe {
+  0% {
+    visibility: visible;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showkeyframe {
+  0% {
+    visibility: visible;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes hidekeyframe {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes hidekeyframe {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.show {
+  -webkit-animation-name: showkeyframe;
+          animation-name: showkeyframe;
+  -webkit-animation-duration: 200ms;
+          animation-duration: 200ms;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  visibility: visible;
+}
+
+.hide {
+  -webkit-animation-name: hidekeyframe;
+          animation-name: hidekeyframe;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  visibility: hidden;
+}/*# sourceMappingURL=common.css.map */

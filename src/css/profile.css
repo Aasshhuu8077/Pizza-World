@@ -1,0 +1,282 @@
+.profile__section {
+  max-height: 80vh;
+}
+
+.profile__data-cont {
+  display: flex;
+  margin-right: 1rem;
+}
+
+.profile__section-cont {
+  background-color: rgba(255, 228, 207, 0.5137254902);
+}
+
+.profile__orderlist-cont {
+  grid-template-rows: 20% 80%;
+}
+
+@media screen and (min-width: 800px) {
+  .profile__section-cont {
+    display: grid;
+    grid-template-columns: 66% 34%;
+  }
+  .profile__data-cont {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 97%;
+    grid-template-rows: 55% 45%;
+  }
+}
+.orderlist-cont {
+  overflow: scroll;
+  padding: 1rem;
+  height: 70vh;
+  width: 100%;
+}
+
+.order-cont {
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 2rem 0;
+  margin: 0.5rem 1rem;
+  max-width: 500px;
+  transition-property: all;
+  transition-duration: 200ms;
+}
+.order-cont:hover {
+  background-color: rgba(255, 163, 92, 0.8352941176);
+  color: white;
+  box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.profile__button-cont {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.profile__basic-button-cont {
+  padding: 2rem 0;
+  border-radius: 5px;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  background-color: white;
+  max-width: 500px;
+}
+
+.btn {
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  transition-property: all;
+  transition-duration: 500ms;
+}
+
+.logout-button {
+  background-color: rgb(237, 72, 72);
+}
+.logout-button:hover {
+  box-shadow: 0px 0px 3px rgb(237, 72, 72);
+}
+.logout-button:active {
+  background-color: rgb(200, 33, 33);
+}
+
+.orders-button {
+  background-color: #fd8428;
+}
+.orders-button:hover {
+  box-shadow: 0px 0px 3px #fd8428;
+}
+.orders-button:active {
+  background-color: #cd671a;
+}
+
+.commit-button {
+  background-color: rgb(33, 156, 197);
+}
+.commit-button:hover {
+  box-shadow: 0px 0px 3px rgb(33, 156, 197);
+}
+.commit-button:active {
+  background-color: rgb(14, 113, 146);
+}
+
+.profile__address-cont {
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  height: 45vh;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.217);
+}
+
+@media screen and (min-width: 800px) {
+  .profile__address-cont {
+    height: 37vh;
+    width: 100%;
+  }
+}
+.profile__address-heading-cont {
+  background: linear-gradient(to right bottom, rgba(252, 177, 119, 0.8352941176), rgba(252, 139, 53, 0.8352941176));
+  color: white;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.profile-address-add-modal {
+  z-index: 20;
+  position: fixed;
+  transition-property: all;
+  transition-duration: 500 ms;
+  background-color: rgba(0, 0, 0, 0.479);
+  visibility: hidden;
+}
+.profile-address-add-modal > div:nth-child(1) {
+  cursor: pointer;
+  top: 10px;
+  right: 10px;
+  border-radius: 50%;
+  transition-property: all;
+  transition-duration: 500ms;
+}
+.profile-address-add-modal > div:nth-child(1):hover {
+  background-color: white;
+  color: black;
+}
+
+.showmodal {
+  visibility: visible;
+}
+
+.hidemodal {
+  visibility: hidden;
+}
+
+.profile-address-add-form {
+  background-color: white;
+  min-width: 200px;
+  width: 50%;
+}
+.profile-address-add-form > h1 {
+  color: #fd8428;
+}
+.profile-address-add-form > div > div {
+  width: 100%;
+}
+.profile-address-add-form > div > div > p {
+  grid-template-columns: 30% 70%;
+}
+.profile-address-add-form > div > div > p > span {
+  color: #E14D2A;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 800px) {
+  .profile-address-add-form {
+    width: 500px;
+  }
+}
+.address__button-cont {
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+
+.address-add-btn {
+  background-color: rgb(58, 166, 58);
+}
+.address-add-btn:hover {
+  box-shadow: 0px 0px 3px rgb(42, 143, 42);
+}
+.address-add-btn:active {
+  background-color: rgb(19, 108, 19);
+}
+
+.address-del-btn {
+  background-color: rgb(237, 72, 72);
+}
+.address-del-btn:hover {
+  box-shadow: 0px 0px 3px rgb(237, 72, 72);
+}
+.address-del-btn:active {
+  background-color: rgb(200, 33, 33);
+}
+
+.address__cont {
+  background-color: white;
+  padding: 1rem 0.5rem;
+  height: 100%;
+}
+
+.address__card-cont {
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.address__info-cont {
+  color: #6e6e6e;
+}
+
+.arrow-btn-cont {
+  width: 30px;
+  height: 30px;
+  transition-property: all;
+  transition-duration: 200ms;
+  stroke: gray;
+  fill: none;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.arrow-btn-cont:hover {
+  stroke: white;
+  stroke-width: 3px;
+  background-color: rgba(0, 0, 0, 0.191);
+}
+
+.selection__boxcont {
+  width: 30px;
+  height: 30px;
+}
+
+.checkbox__overlay {
+  border: 2px solid rgb(69, 201, 244);
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+.checkbox__overlay > button {
+  color: white;
+}
+
+.address__card-desc {
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition-property: all;
+  height: 0px;
+  overflow: hidden;
+  transition-duration: 500ms;
+}
+
+.expand__desc {
+  height: 100%;
+}
+
+.profile__info-cont {
+  width: 100%;
+}
+
+.profile__infomation-cont {
+  width: 100vw;
+}
+
+.profile__infomation-cont > div > p:nth-child(1) {
+  color: #CD104D;
+  cursor: default;
+}
+
+.profile__infomation-cont > div > p:nth-child(2) {
+  color: rgba(222, 110, 24, 0.8352941176);
+  cursor: default;
+}/*# sourceMappingURL=profile.css.map */

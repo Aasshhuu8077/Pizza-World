@@ -1,0 +1,29 @@
+.cafesection__img-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9e5c1d;
+}
+.cafesection__img-cont > img {
+  z-index: 1;
+  transform: rotate(-30deg);
+}
+
+.cafesection__overlay {
+  top: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.452);
+}
+
+.cafesection__data-cont {
+  background: url("../assets/images/footer_background.png");
+  background-size: cover;
+}
+.cafesection__data-cont > h1 {
+  transform: rotate(-30deg);
+  font-family: "Freehand", cursive;
+  color: white;
+  z-index: 1;
+  left: -20%;
+  top: 10%;
+}/*# sourceMappingURL=cafesection.css.map */

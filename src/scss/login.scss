@@ -1,0 +1,54 @@
+@import "./variables";
+
+.loginsection__cont{
+    height: 60vh;
+}
+
+.login__form-cont{  
+    box-shadow: 0px 0px 15px rgb(137, 137, 137);
+    background-color: $primary-color;
+    height: 70%;
+    background-size: cover;
+    color: white;
+
+    &>img{
+        z-index: 0;
+    }
+
+}
+
+.loginform{
+    background-color: rgba(255, 255, 255, 0.868);
+    color: black;
+    backdrop-filter: blur(2px);
+    &>div>div>input{
+        outline: none;
+    }
+
+}
+
+.login__button{
+    border: 2px solid $secondary-color;
+    color: white;
+    background-color: $secondary-color;
+    
+    &:hover{
+        background-color: #e11153;
+        border: 2px solid #e11153;
+    }
+    
+    &:active{
+        border: 2px solid $secondary-color;
+        background-color: $secondary-color;
+    }
+
+}
+
+.login__signinLink{
+    color: $accent-color;
+
+    &:hover{
+        color: $primary-color;
+    }
+
+}

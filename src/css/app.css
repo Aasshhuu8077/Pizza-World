@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Freehand&family=Poppins:wght@200;300;400;500;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#body {
+  color: rgb(126, 126, 126);
+  font-family: "Poppins", sans-serif !important;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}/*# sourceMappingURL=app.css.map */

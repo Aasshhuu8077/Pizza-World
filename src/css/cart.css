@@ -1,0 +1,216 @@
+.cart__heading-cont {
+  color: #fd8428;
+  display: flex;
+  justify-content: center;
+}
+
+.cart__cont {
+  margin: 2.5rem auto;
+  width: 80%;
+  min-height: 80vh;
+}
+
+.cart__heading-cont > h1 {
+  font-size: 3.5rem;
+}
+
+.cart__data-cont {
+  border-radius: 5px;
+  border: 1px solid #dcdcdc;
+  height: 60vh;
+}
+
+.cart__item-cont:hover .cart__item-lable-cont > div > svg {
+  stroke: white;
+}
+
+.cart__item-lable-cont {
+  padding: 1rem 0.5rem;
+  margin: 1rem 0 0 0;
+  border-radius: 5px;
+  border: 1px solid #dcdcdc;
+}
+.cart__item-lable-cont:hover {
+  background-color: #fd8428;
+  font-weight: 500;
+  color: white;
+}
+.cart__item-lable-cont:hover > button > svg {
+  stroke: white;
+}
+.cart__item-lable-cont > button {
+  cursor: pointer;
+}
+.cart__item-lable-cont > button > svg {
+  stroke: rgb(126, 126, 126);
+  fill: none;
+}
+
+.cart__item-desc-cont {
+  border: 1px solid #dcdcdc;
+}
+
+@-webkit-keyframes showcontanimation {
+  0% {
+    opacity: 0;
+    height: 16px;
+  }
+  100% {
+    opacity: 1;
+    height: 200px;
+  }
+}
+
+@keyframes showcontanimation {
+  0% {
+    opacity: 0;
+    height: 16px;
+  }
+  100% {
+    opacity: 1;
+    height: 200px;
+  }
+}
+@-webkit-keyframes hidecontanimation {
+  0% {
+    opacity: 1;
+    height: 200px;
+  }
+  100% {
+    opacity: 0;
+    height: 0px;
+  }
+}
+@keyframes hidecontanimation {
+  0% {
+    opacity: 1;
+    height: 200px;
+  }
+  100% {
+    opacity: 0;
+    height: 0px;
+  }
+}
+.showcontani {
+  -webkit-animation-name: showcontanimation;
+          animation-name: showcontanimation;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.hidecontani {
+  -webkit-animation-name: hidecontanimation;
+          animation-name: hidecontanimation;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.showcont {
+  display: block;
+  height: 200px;
+}
+
+.cart__item-desc-cont {
+  border-radius: 5px;
+}
+
+.cart__item-footer-cont {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cart__item-footer-button-cont > button:nth-child(1) {
+  background-color: rgb(81, 178, 200);
+  margin-right: 1rem;
+}
+.cart__item-footer-button-cont > button:nth-child(1):hover {
+  background-color: rgb(51, 160, 185);
+}
+.cart__item-footer-button-cont > button:nth-child(1):active {
+  background-color: rgb(81, 178, 200);
+}
+.cart__item-footer-button-cont > button:nth-child(2) {
+  background-color: #fd8428;
+}
+.cart__item-footer-button-cont > button:nth-child(2):hover {
+  background-color: #b8560b;
+}
+.cart__item-footer-button-cont > button:nth-child(2):active {
+  background-color: #fd8428;
+}
+
+@media screen and (min-width: 800px) {
+  .cart__heading-cont > h1 {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+}
+.cart__data-itemgroup {
+  border-radius: 5px;
+  border: 2px solid #fd8428;
+  margin-top: 0.75rem;
+}
+
+.cart__data-itemgroup-itemcont > div {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem;
+  border-bottom: 1px solid #dcdcdc;
+}
+.cart__data-itemgroup-itemcont > div > p:nth-child(1) {
+  color: #9C2C77;
+}
+
+.cart__data-itemgroup-buttoncont {
+  margin: 3rem;
+}
+.cart__data-itemgroup-buttoncont > button {
+  background-color: #fd8428;
+}
+
+@media screen and (min-width: 800px) {
+  .cart__data-main-cont {
+    margin-top: 3rem;
+    display: grid;
+    max-height: 60vh;
+    grid-template-columns: 70% 30%;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+  }
+  .cart__data-itemgroup {
+    margin-top: 0;
+  }
+}
+.cart__data-footer-price {
+  color: #fd8428;
+}
+.cart__data-footer-price > p > span {
+  color: rgb(126, 126, 126);
+}
+
+.cart__data-footer-button-cont > button {
+  background-color: #fd8428;
+}
+.cart__data-footer-button-cont > button:hover {
+  background-color: #b8560b;
+}
+.cart__data-footer-button-cont > button:active {
+  background-color: #fd8428;
+}
+
+.cart__data-itemcont-emptyimgcont {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fd8428;
+}
+.cart__data-itemcont-emptyimgcont > img {
+  width: 500px;
+}/*# sourceMappingURL=cart.css.map */

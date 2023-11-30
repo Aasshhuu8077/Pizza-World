@@ -1,0 +1,40 @@
+.orderpage__cont {
+  max-width: 1024px;
+  width: 80%;
+  margin: 3rem auto;
+}
+
+.orderpage__heading-cont {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  color: #fd8428;
+}
+
+.orderpage__userorder-cont {
+  overflow-y: scroll;
+  border: 1px solid #dcdcdc;
+  padding: 1rem;
+  height: 60vh;
+  border-radius: 5px;
+}
+
+.order__userorder-itemcont {
+  cursor: pointer;
+  border: 1px solid #dcdcdc;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.orderpage__userorder-cont::-webkit-scrollbar {
+  display: block;
+  width: 10px;
+  border-radius: 50px;
+  background-color: rgb(227, 227, 227);
+}
+
+.orderpage__userorder-cont::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color: #fd8428;
+}/*# sourceMappingURL=orderpage.css.map */
